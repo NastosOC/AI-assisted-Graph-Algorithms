@@ -1,0 +1,1144 @@
+
+C1000.9 - Graph with 60 nodes and 1598 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:41:39
+    Built-in runtime:                      1.991999s
+    Built-in clique:                       [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+  Non-greedy:
+    Started at 11:41:43
+    Non-greedy runtime:                    0.571410s
+    Non-greedy clique:                     [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+    Non-greedy steps:                      144501
+  Largest first colouring:
+    Started at 11:41:45
+    Largest first runtime:                 3.853976s
+    Largest first clique:                  [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+    Largest first steps:                   972
+  Random Sequential colouring:
+    Started at 11:41:51
+    Random sequential runtime:             4.258703s
+    Random sequential clique:              [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+    Random sequential steps:               2085
+  Partial - largest first colouring:
+    Started at 11:41:57
+    Largest first runtime:                 5.228592s
+    Largest first clique:                  [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+    Largest first steps:                   2864
+  Partial - random Sequential colouring:
+    Started at 11:42:04
+    Random sequential runtime:             6.428036s
+    Random sequential clique:              [1, 6, 7, 8, 18, 24, 25, 26, 27, 31, 32, 35, 36, 38, 40, 41, 44, 45, 48, 51, 55, 56, 57, 58]
+    Random sequential steps:               7404
+
+C125.9 - Graph with 60 nodes and 1612 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:42:13
+    Built-in runtime:                      1.845809s
+    Built-in clique:                       [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+  Non-greedy:
+    Started at 11:42:16
+    Non-greedy runtime:                    0.675265s
+    Non-greedy clique:                     [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+    Non-greedy steps:                      189969
+  Largest first colouring:
+    Started at 11:42:18
+    Largest first runtime:                 1.042491s
+    Largest first clique:                  [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+    Largest first steps:                   1888
+  Random Sequential colouring:
+    Started at 11:42:21
+    Random sequential runtime:             1.446420s
+    Random sequential clique:              [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+    Random sequential steps:               4223
+  Partial - largest first colouring:
+    Started at 11:42:24
+    Largest first runtime:                 1.462554s
+    Largest first clique:                  [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+    Largest first steps:                   5355
+  Partial - random Sequential colouring:
+    Started at 11:42:27
+    Random sequential runtime:             1.552279s
+    Random sequential clique:              [1, 2, 6, 7, 9, 11, 18, 19, 22, 24, 29, 33, 34, 35, 38, 39, 40, 41, 43, 44, 45, 47, 48, 50, 54]
+    Random sequential steps:               13411
+
+C2000.5 - Graph with 60 nodes and 869 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:42:31
+    Built-in runtime:                      0.016610s
+    Built-in clique:                       [21, 32, 34, 35, 41, 43, 45, 48]
+  Non-greedy:
+    Started at 11:42:33
+    Non-greedy runtime:                    0.020179s
+    Non-greedy clique:                     [21, 32, 34, 35, 41, 43, 45, 48]
+    Non-greedy steps:                      2578
+  Largest first colouring:
+    Started at 11:42:35
+    Largest first runtime:                 0.546835s
+    Largest first clique:                  [21, 32, 34, 35, 41, 43, 45, 48]
+    Largest first steps:                   249
+  Random Sequential colouring:
+    Started at 11:42:38
+    Random sequential runtime:             0.364341s
+    Random sequential clique:              [21, 32, 34, 35, 41, 43, 45, 48]
+    Random sequential steps:               395
+  Partial - largest first colouring:
+    Started at 11:42:40
+    Largest first runtime:                 0.682696s
+    Largest first clique:                  [21, 32, 34, 35, 41, 43, 45, 48]
+    Largest first steps:                   1037
+  Partial - random Sequential colouring:
+    Started at 11:42:43
+    Random sequential runtime:             0.340707s
+    Random sequential clique:              [21, 32, 34, 35, 41, 43, 45, 48]
+    Random sequential steps:               1177
+
+C2000.9 - Graph with 60 nodes and 1590 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:42:48
+    Built-in runtime:                      2.845123s
+    Built-in clique:                       [4, 7, 8, 10, 11, 13, 18, 20, 28, 29, 33, 34, 35, 37, 39, 40, 42, 43, 49, 53, 56, 59]
+  Non-greedy:
+    Started at 11:42:53
+    Non-greedy runtime:                    1.365294s
+    Non-greedy clique:                     [4, 7, 8, 10, 11, 13, 18, 20, 28, 29, 33, 34, 35, 37, 39, 40, 42, 43, 49, 53, 56, 59]
+    Non-greedy steps:                      365474
+  Largest first colouring:
+    Started at 11:42:58
+    exceeded 10s
+  Random Sequential colouring:
+    Started at 11:43:10
+    exceeded 10s
+  Partial - largest first colouring:
+    Started at 11:43:22
+    exceeded 10s
+  Partial - random Sequential colouring:
+    Started at 11:43:35
+    exceeded 10s
+
+C250.9 - Graph with 60 nodes and 1585 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:43:47
+    Built-in runtime:                      1.856586s
+    Built-in clique:                       [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+  Non-greedy:
+    Started at 11:43:51
+    Non-greedy runtime:                    0.712575s
+    Non-greedy clique:                     [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+    Non-greedy steps:                      178710
+  Largest first colouring:
+    Started at 11:43:54
+    Largest first runtime:                 1.512078s
+    Largest first clique:                  [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+    Largest first steps:                   1196
+  Random Sequential colouring:
+    Started at 11:43:57
+    Random sequential runtime:             1.746324s
+    Random sequential clique:              [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+    Random sequential steps:               2592
+  Partial - largest first colouring:
+    Started at 11:44:00
+    Largest first runtime:                 1.759871s
+    Largest first clique:                  [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+    Largest first steps:                   3216
+  Partial - random Sequential colouring:
+    Started at 11:44:03
+    Random sequential runtime:             2.131657s
+    Random sequential clique:              [3, 4, 6, 8, 14, 19, 23, 24, 26, 27, 36, 40, 41, 42, 43, 47, 48, 49, 50, 51, 53, 55, 57]
+    Random sequential steps:               8970
+
+C500.9 - Graph with 60 nodes and 1597 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:44:10
+    Built-in runtime:                      2.178989s
+    Built-in clique:                       [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+  Non-greedy:
+    Started at 11:44:14
+    Non-greedy runtime:                    0.696567s
+    Non-greedy clique:                     [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+    Non-greedy steps:                      163198
+  Largest first colouring:
+    Started at 11:44:16
+    Largest first runtime:                 1.903280s
+    Largest first clique:                  [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+    Largest first steps:                   842
+  Random Sequential colouring:
+    Started at 11:44:20
+    Random sequential runtime:             2.020798s
+    Random sequential clique:              [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+    Random sequential steps:               1668
+  Partial - largest first colouring:
+    Started at 11:44:24
+    Largest first runtime:                 2.237282s
+    Largest first clique:                  [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+    Largest first steps:                   2260
+  Partial - random Sequential colouring:
+    Started at 11:44:28
+    Random sequential runtime:             2.941423s
+    Random sequential clique:              [2, 5, 6, 14, 18, 19, 24, 28, 29, 30, 31, 32, 33, 34, 40, 43, 49, 51, 52, 55, 57, 58, 59, 60]
+    Random sequential steps:               5472
+
+DSJC1000.5 - Graph with 60 nodes and 890 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:44:33
+    Built-in runtime:                      0.011737s
+    Built-in clique:                       [3, 4, 8, 17, 32, 39, 40, 50]
+  Non-greedy:
+    Started at 11:44:34
+    Non-greedy runtime:                    0.012538s
+    Non-greedy clique:                     [3, 4, 8, 17, 32, 39, 40, 50]
+    Non-greedy steps:                      2617
+  Largest first colouring:
+    Started at 11:44:36
+    Largest first runtime:                 0.303525s
+    Largest first clique:                  [3, 4, 8, 17, 32, 39, 40, 50]
+    Largest first steps:                   188
+  Random Sequential colouring:
+    Started at 11:44:38
+    Random sequential runtime:             0.172479s
+    Random sequential clique:              [3, 4, 8, 17, 32, 39, 40, 50]
+    Random sequential steps:               302
+  Partial - largest first colouring:
+    Started at 11:44:40
+    Largest first runtime:                 0.448589s
+    Largest first clique:                  [3, 4, 8, 17, 32, 39, 40, 50]
+    Largest first steps:                   1033
+  Partial - random Sequential colouring:
+    Started at 11:44:42
+    Random sequential runtime:             0.241453s
+    Random sequential clique:              [3, 4, 8, 17, 32, 39, 40, 50]
+    Random sequential steps:               1135
+
+DSJC500.5 - Graph with 60 nodes and 904 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:44:44
+    Built-in runtime:                      0.012691s
+    Built-in clique:                       [7, 8, 16, 22, 27, 48, 51, 57]
+  Non-greedy:
+    Started at 11:44:46
+    Non-greedy runtime:                    0.009093s
+    Non-greedy clique:                     [7, 8, 16, 22, 27, 48, 51, 57]
+    Non-greedy steps:                      2772
+  Largest first colouring:
+    Started at 11:44:47
+    Largest first runtime:                 0.213179s
+    Largest first clique:                  [7, 8, 16, 22, 27, 48, 51, 57]
+    Largest first steps:                   269
+  Random Sequential colouring:
+    Started at 11:44:49
+    Random sequential runtime:             0.124029s
+    Random sequential clique:              [7, 8, 16, 22, 27, 48, 51, 57]
+    Random sequential steps:               336
+  Partial - largest first colouring:
+    Started at 11:44:51
+    Largest first runtime:                 0.207130s
+    Largest first clique:                  [7, 8, 16, 22, 27, 48, 51, 57]
+    Largest first steps:                   1162
+  Partial - random Sequential colouring:
+    Started at 11:44:53
+    Random sequential runtime:             0.110622s
+    Random sequential clique:              [7, 8, 16, 22, 27, 48, 51, 57]
+    Random sequential steps:               1208
+
+MANN_a27 - Graph with 60 nodes and 1704 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:44:55
+    Built-in runtime:                      0.362686s
+    Built-in clique:                       [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+  Non-greedy:
+    Started at 11:44:56
+    Non-greedy runtime:                    0.238112s
+    Non-greedy clique:                     [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+    Non-greedy steps:                      192799
+  Largest first colouring:
+    Started at 11:44:58
+    Largest first runtime:                 2.297742s
+    Largest first clique:                  [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+    Largest first steps:                   1505
+  Random Sequential colouring:
+    Started at 11:45:01
+    Random sequential runtime:             1.564211s
+    Random sequential clique:              [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+    Random sequential steps:               2262
+  Partial - largest first colouring:
+    Started at 11:45:05
+    Largest first runtime:                 2.621343s
+    Largest first clique:                  [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+    Largest first steps:                   4408
+  Partial - random Sequential colouring:
+    Started at 11:45:09
+    Random sequential runtime:             2.005583s
+    Random sequential clique:              [1, 3, 4, 6, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 29, 32, 34, 38, 42, 43, 48, 51, 53, 57, 58]
+    Random sequential steps:               8154
+
+MANN_a45 - Graph with 60 nodes and 1740 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:45:14
+    Built-in runtime:                      0.020212s
+    Built-in clique:                       [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+  Non-greedy:
+    Started at 11:45:16
+    Non-greedy runtime:                    0.016638s
+    Non-greedy clique:                     [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+    Non-greedy steps:                      1068
+  Largest first colouring:
+    Started at 11:45:18
+    Largest first runtime:                 0.676168s
+    Largest first clique:                  [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+    Largest first steps:                   165
+  Random Sequential colouring:
+    Started at 11:45:21
+    Random sequential runtime:             0.371186s
+    Random sequential clique:              [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+    Random sequential steps:               207
+  Partial - largest first colouring:
+    Started at 11:45:23
+    Largest first runtime:                 0.223323s
+    Largest first clique:                  [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+    Largest first steps:                   252
+  Partial - random Sequential colouring:
+    Started at 11:45:25
+    Random sequential runtime:             0.196864s
+    Random sequential clique:              [1, 3, 4, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 48, 50, 53, 56, 58]
+    Random sequential steps:               369
+
+MANN_a81 - Graph with 60 nodes and 1770 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:45:29
+    Built-in runtime:                      0.013299s
+    Built-in clique:                       [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+  Non-greedy:
+    Started at 11:45:31
+    Non-greedy runtime:                    0.021628s
+    Non-greedy clique:                     [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Non-greedy steps:                      120
+  Largest first colouring:
+    Started at 11:45:34
+    Largest first runtime:                 0.775455s
+    Largest first clique:                  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Largest first steps:                   120
+  Random Sequential colouring:
+    Started at 11:45:37
+    Random sequential runtime:             0.425009s
+    Random sequential clique:              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Random sequential steps:               120
+  Partial - largest first colouring:
+    Started at 11:45:40
+    Largest first runtime:                 0.236254s
+    Largest first clique:                  [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Largest first steps:                   120
+  Partial - random Sequential colouring:
+    Started at 11:45:42
+    Random sequential runtime:             0.167622s
+    Random sequential clique:              [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60]
+    Random sequential steps:               120
+
+Brock200.2 - Graph with 60 nodes and 913 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:45:45
+    Built-in runtime:                      0.011452s
+    Built-in clique:                       [8, 23, 36, 40, 48, 49, 58, 59]
+  Non-greedy:
+    Started at 11:45:47
+    Non-greedy runtime:                    0.010217s
+    Non-greedy clique:                     [8, 23, 36, 40, 48, 49, 58, 59]
+    Non-greedy steps:                      3792
+  Largest first colouring:
+    Started at 11:45:49
+    Largest first runtime:                 0.129701s
+    Largest first clique:                  [8, 23, 36, 40, 48, 49, 58, 59]
+    Largest first steps:                   417
+  Random Sequential colouring:
+    Started at 11:45:50
+    Random sequential runtime:             0.086838s
+    Random sequential clique:              [8, 23, 36, 40, 48, 49, 58, 59]
+    Random sequential steps:               633
+  Partial - largest first colouring:
+    Started at 11:45:52
+    Largest first runtime:                 0.134719s
+    Largest first clique:                  [8, 23, 36, 40, 48, 49, 58, 59]
+    Largest first steps:                   1306
+  Partial - random Sequential colouring:
+    Started at 11:45:54
+    Random sequential runtime:             0.076801s
+    Random sequential clique:              [8, 23, 36, 40, 48, 49, 58, 59]
+    Random sequential steps:               1691
+
+Brock200.4 - Graph with 60 nodes and 1182 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:45:56
+    Built-in runtime:                      0.058542s
+    Built-in clique:                       [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+  Non-greedy:
+    Started at 11:45:57
+    Non-greedy runtime:                    0.028863s
+    Non-greedy clique:                     [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+    Non-greedy steps:                      10353
+  Largest first colouring:
+    Started at 11:45:59
+    Largest first runtime:                 0.245317s
+    Largest first clique:                  [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+    Largest first steps:                   390
+  Random Sequential colouring:
+    Started at 11:46:01
+    Random sequential runtime:             0.204872s
+    Random sequential clique:              [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+    Random sequential steps:               687
+  Partial - largest first colouring:
+    Started at 11:46:03
+    Largest first runtime:                 0.324067s
+    Largest first clique:                  [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+    Largest first steps:                   1536
+  Partial - random Sequential colouring:
+    Started at 11:46:05
+    Random sequential runtime:             0.252437s
+    Random sequential clique:              [4, 18, 20, 24, 25, 34, 38, 39, 40, 45, 55]
+    Random sequential steps:               2761
+
+Brock400.2 - Graph with 60 nodes and 1323 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:46:06
+    Built-in runtime:                      0.155876s
+    Built-in clique:                       [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+  Non-greedy:
+    Started at 11:46:08
+    Non-greedy runtime:                    0.078345s
+    Non-greedy clique:                     [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+    Non-greedy steps:                      23759
+  Largest first colouring:
+    Started at 11:46:10
+    Largest first runtime:                 1.088837s
+    Largest first clique:                  [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+    Largest first steps:                   750
+  Random Sequential colouring:
+    Started at 11:46:13
+    Random sequential runtime:             0.778174s
+    Random sequential clique:              [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+    Random sequential steps:               1123
+  Partial - largest first colouring:
+    Started at 11:46:15
+    Largest first runtime:                 1.433959s
+    Largest first clique:                  [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+    Largest first steps:                   2810
+  Partial - random Sequential colouring:
+    Started at 11:46:18
+    Random sequential runtime:             0.994539s
+    Random sequential clique:              [1, 7, 9, 14, 15, 17, 18, 31, 32, 43, 45, 57, 59, 60]
+    Random sequential steps:               4880
+
+Brock400.4 - Graph with 60 nodes and 1326 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:46:20
+    Built-in runtime:                      0.152568s
+    Built-in clique:                       [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+  Non-greedy:
+    Started at 11:46:22
+    Non-greedy runtime:                    0.104942s
+    Non-greedy clique:                     [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+    Non-greedy steps:                      33972
+  Largest first colouring:
+    Started at 11:46:24
+    Largest first runtime:                 1.569517s
+    Largest first clique:                  [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+    Largest first steps:                   1358
+  Random Sequential colouring:
+    Started at 11:46:27
+    Random sequential runtime:             1.246118s
+    Random sequential clique:              [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+    Random sequential steps:               2327
+  Partial - largest first colouring:
+    Started at 11:46:30
+    Largest first runtime:                 2.192216s
+    Largest first clique:                  [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+    Largest first steps:                   5696
+  Partial - random Sequential colouring:
+    Started at 11:46:34
+    Random sequential runtime:             1.632408s
+    Random sequential clique:              [6, 9, 19, 23, 26, 28, 37, 42, 44, 45, 47, 50, 58]
+    Random sequential steps:               9196
+
+Brock800.2 - Graph with 60 nodes and 1151 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:46:37
+    Built-in runtime:                      0.046049s
+    Built-in clique:                       [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+  Non-greedy:
+    Started at 11:46:39
+    Non-greedy runtime:                    0.032382s
+    Non-greedy clique:                     [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+    Non-greedy steps:                      10153
+  Largest first colouring:
+    Started at 11:46:41
+    Largest first runtime:                 1.122190s
+    Largest first clique:                  [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+    Largest first steps:                   654
+  Random Sequential colouring:
+    Started at 11:46:44
+    Random sequential runtime:             0.788111s
+    Random sequential clique:              [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+    Random sequential steps:               955
+  Partial - largest first colouring:
+    Started at 11:46:46
+    Largest first runtime:                 1.281183s
+    Largest first clique:                  [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+    Largest first steps:                   2191
+  Partial - random Sequential colouring:
+    Started at 11:46:50
+    Random sequential runtime:             0.792746s
+    Random sequential clique:              [5, 8, 10, 18, 19, 27, 28, 44, 49, 51]
+    Random sequential steps:               3009
+
+Brock800.4 - Graph with 60 nodes and 1160 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:46:53
+    Built-in runtime:                      0.044537s
+    Built-in clique:                       [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+  Non-greedy:
+    Started at 11:46:54
+    Non-greedy runtime:                    0.030915s
+    Non-greedy clique:                     [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+    Non-greedy steps:                      9827
+  Largest first colouring:
+    Started at 11:46:56
+    Largest first runtime:                 0.967875s
+    Largest first clique:                  [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+    Largest first steps:                   474
+  Random Sequential colouring:
+    Started at 11:46:58
+    Random sequential runtime:             0.718717s
+    Random sequential clique:              [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+    Random sequential steps:               755
+  Partial - largest first colouring:
+    Started at 11:47:01
+    Largest first runtime:                 1.081744s
+    Largest first clique:                  [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+    Largest first steps:                   2004
+  Partial - random Sequential colouring:
+    Started at 11:47:04
+    Random sequential runtime:             0.572795s
+    Random sequential clique:              [1, 2, 5, 15, 18, 19, 21, 36, 53, 57, 58]
+    Random sequential steps:               2724
+
+Gen200_p09_44 - Graph with 60 nodes and 1605 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:47:06
+    Built-in runtime:                      1.583425s
+    Built-in clique:                       [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+  Non-greedy:
+    Started at 11:47:10
+    Non-greedy runtime:                    0.638574s
+    Non-greedy clique:                     [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+    Non-greedy steps:                      165238
+  Largest first colouring:
+    Started at 11:47:12
+    Largest first runtime:                 0.541138s
+    Largest first clique:                  [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+    Largest first steps:                   556
+  Random Sequential colouring:
+    Started at 11:47:14
+    Random sequential runtime:             0.780017s
+    Random sequential clique:              [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+    Random sequential steps:               1537
+  Partial - largest first colouring:
+    Started at 11:47:16
+    Largest first runtime:                 0.943619s
+    Largest first clique:                  [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+    Largest first steps:                   1434
+  Partial - random Sequential colouring:
+    Started at 11:47:19
+    Random sequential runtime:             1.368135s
+    Random sequential clique:              [1, 2, 9, 16, 19, 20, 23, 24, 25, 26, 27, 30, 33, 38, 41, 44, 45, 48, 49, 50, 52, 53, 54, 56, 58]
+    Random sequential steps:               5860
+
+Gen200_p09_55 - Graph with 60 nodes and 1576 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:47:22
+    Built-in runtime:                      1.357979s
+    Built-in clique:                       [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+  Non-greedy:
+    Started at 11:47:25
+    Non-greedy runtime:                    0.458361s
+    Non-greedy clique:                     [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+    Non-greedy steps:                      117444
+  Largest first colouring:
+    Started at 11:47:27
+    Largest first runtime:                 0.854820s
+    Largest first clique:                  [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+    Largest first steps:                   817
+  Random Sequential colouring:
+    Started at 11:47:29
+    Random sequential runtime:             1.027249s
+    Random sequential clique:              [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+    Random sequential steps:               1937
+  Partial - largest first colouring:
+    Started at 11:47:32
+    Largest first runtime:                 1.199291s
+    Largest first clique:                  [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+    Largest first steps:                   2216
+  Partial - random Sequential colouring:
+    Started at 11:47:35
+    Random sequential runtime:             1.122432s
+    Random sequential clique:              [1, 5, 11, 12, 13, 14, 15, 16, 17, 18, 20, 27, 30, 39, 40, 42, 43, 45, 51, 52, 56, 57, 58]
+    Random sequential steps:               6173
+
+Gen400_p09_55 - Graph with 60 nodes and 1579 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:47:37
+    Built-in runtime:                      1.954915s
+    Built-in clique:                       [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+  Non-greedy:
+    Started at 11:47:41
+    Non-greedy runtime:                    0.741373s
+    Non-greedy clique:                     [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+    Non-greedy steps:                      219226
+  Largest first colouring:
+    Started at 11:47:43
+    Largest first runtime:                 3.436086s
+    Largest first clique:                  [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+    Largest first steps:                   1689
+  Random Sequential colouring:
+    Started at 11:47:48
+    Random sequential runtime:             3.685207s
+    Random sequential clique:              [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+    Random sequential steps:               3913
+  Partial - largest first colouring:
+    Started at 11:47:54
+    Largest first runtime:                 4.774525s
+    Largest first clique:                  [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+    Largest first steps:                   5272
+  Partial - random Sequential colouring:
+    Started at 11:48:00
+    Random sequential runtime:             4.906431s
+    Random sequential clique:              [1, 2, 4, 11, 13, 15, 16, 18, 20, 24, 25, 27, 28, 34, 37, 43, 50, 52, 53, 55, 57, 60]
+    Random sequential steps:               14464
+
+Gen400_p09_65 - Graph with 60 nodes and 1559 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:48:06
+    Built-in runtime:                      1.309720s
+    Built-in clique:                       [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+  Non-greedy:
+    Started at 11:48:10
+    Non-greedy runtime:                    0.489323s
+    Non-greedy clique:                     [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+    Non-greedy steps:                      186517
+  Largest first colouring:
+    Started at 11:48:12
+    Largest first runtime:                 3.400001s
+    Largest first clique:                  [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+    Largest first steps:                   1965
+  Random Sequential colouring:
+    Started at 11:48:17
+    Random sequential runtime:             3.000292s
+    Random sequential clique:              [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+    Random sequential steps:               4037
+  Partial - largest first colouring:
+    Started at 11:48:22
+    Largest first runtime:                 4.431368s
+    Largest first clique:                  [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+    Largest first steps:                   6194
+  Partial - random Sequential colouring:
+    Started at 11:48:28
+    Random sequential runtime:             4.118299s
+    Random sequential clique:              [2, 3, 4, 6, 8, 22, 23, 25, 26, 29, 32, 33, 38, 41, 44, 47, 52, 54, 55, 56, 57, 59]
+    Random sequential steps:               13922
+
+Gen400_p09_75 - Graph with 60 nodes and 1591 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:48:33
+    Built-in runtime:                      1.816189s
+    Built-in clique:                       [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+  Non-greedy:
+    Started at 11:48:37
+    Non-greedy runtime:                    0.682333s
+    Non-greedy clique:                     [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+    Non-greedy steps:                      223459
+  Largest first colouring:
+    Started at 11:48:39
+    Largest first runtime:                 2.724437s
+    Largest first clique:                  [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+    Largest first steps:                   1283
+  Random Sequential colouring:
+    Started at 11:48:44
+    Random sequential runtime:             2.894290s
+    Random sequential clique:              [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+    Random sequential steps:               3530
+  Partial - largest first colouring:
+    Started at 11:48:48
+    Largest first runtime:                 2.945018s
+    Largest first clique:                  [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+    Largest first steps:                   3632
+  Partial - random Sequential colouring:
+    Started at 11:48:53
+    Random sequential runtime:             3.928695s
+    Random sequential clique:              [1, 3, 8, 9, 13, 14, 16, 17, 18, 22, 25, 28, 29, 31, 34, 35, 36, 40, 45, 48, 50, 51, 57]
+    Random sequential steps:               12539
+
+Hamming10_4 - Graph with 60 nodes and 616 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:48:59
+    Built-in runtime:                      0.016066s
+    Built-in clique:                       [1, 31, 40, 58]
+  Non-greedy:
+    Started at 11:49:01
+    Non-greedy runtime:                    0.013818s
+    Non-greedy clique:                     [1, 31, 40, 58]
+    Non-greedy steps:                      1103
+  Largest first colouring:
+    Started at 11:49:03
+    Largest first runtime:                 0.282138s
+    Largest first clique:                  [1, 31, 40, 58]
+    Largest first steps:                   308
+  Random Sequential colouring:
+    Started at 11:49:05
+    Random sequential runtime:             0.152790s
+    Random sequential clique:              [1, 31, 40, 58]
+    Random sequential steps:               338
+  Partial - largest first colouring:
+    Started at 11:49:07
+    Largest first runtime:                 0.067771s
+    Largest first clique:                  [1, 31, 40, 58]
+    Largest first steps:                   1103
+  Partial - random Sequential colouring:
+    Started at 11:49:09
+    Random sequential runtime:             0.037619s
+    Random sequential clique:              [1, 31, 40, 58]
+    Random sequential steps:               1103
+
+Hamming8_4 - Graph with 60 nodes and 616 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:49:11
+    Built-in runtime:                      0.003672s
+    Built-in clique:                       [1, 31, 40, 58]
+  Non-greedy:
+    Started at 11:49:13
+    Non-greedy runtime:                    0.003210s
+    Non-greedy clique:                     [1, 31, 40, 58]
+    Non-greedy steps:                      1103
+  Largest first colouring:
+    Started at 11:49:14
+    Largest first runtime:                 0.058482s
+    Largest first clique:                  [1, 31, 40, 58]
+    Largest first steps:                   308
+  Random Sequential colouring:
+    Started at 11:49:16
+    Random sequential runtime:             0.034644s
+    Random sequential clique:              [1, 31, 40, 58]
+    Random sequential steps:               296
+  Partial - largest first colouring:
+    Started at 11:49:18
+    Largest first runtime:                 0.024145s
+    Largest first clique:                  [1, 31, 40, 58]
+    Largest first steps:                   1103
+  Partial - random Sequential colouring:
+    Started at 11:49:19
+    Random sequential runtime:             0.011726s
+    Random sequential clique:              [1, 31, 40, 58]
+    Random sequential steps:               1103
+
+Keller4 - Graph with 60 nodes and 912 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:49:21
+    Built-in runtime:                      0.006191s
+    Built-in clique:                       [1, 20, 34, 37, 48, 49, 55]
+  Non-greedy:
+    Started at 11:49:23
+    Non-greedy runtime:                    0.004941s
+    Non-greedy clique:                     [1, 20, 34, 37, 48, 49, 55]
+    Non-greedy steps:                      2089
+  Largest first colouring:
+    Started at 11:49:24
+    Largest first runtime:                 0.103565s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   275
+  Random Sequential colouring:
+    Started at 11:49:26
+    Random sequential runtime:             0.058847s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               275
+  Partial - largest first colouring:
+    Started at 11:49:28
+    Largest first runtime:                 0.056737s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   1129
+  Partial - random Sequential colouring:
+    Started at 11:49:29
+    Random sequential runtime:             0.045095s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               1074
+
+Keller5 - Graph with 60 nodes and 912 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:49:31
+    Built-in runtime:                      0.013187s
+    Built-in clique:                       [1, 20, 34, 37, 48, 49, 55]
+  Non-greedy:
+    Started at 11:49:33
+    Non-greedy runtime:                    0.012643s
+    Non-greedy clique:                     [1, 20, 34, 37, 48, 49, 55]
+    Non-greedy steps:                      2089
+  Largest first colouring:
+    Started at 11:49:35
+    Largest first runtime:                 0.441267s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   275
+  Random Sequential colouring:
+    Started at 11:49:37
+    Random sequential runtime:             0.153179s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               159
+  Partial - largest first colouring:
+    Started at 11:49:39
+    Largest first runtime:                 0.251842s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   1129
+  Partial - random Sequential colouring:
+    Started at 11:49:41
+    Random sequential runtime:             0.130064s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               1145
+
+Keller6 - Graph with 60 nodes and 912 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:49:43
+    Built-in runtime:                      0.014276s
+    Built-in clique:                       [1, 20, 34, 37, 48, 49, 55]
+  Non-greedy:
+    Started at 11:49:45
+    Non-greedy runtime:                    0.010454s
+    Non-greedy clique:                     [1, 20, 34, 37, 48, 49, 55]
+    Non-greedy steps:                      2089
+  Largest first colouring:
+    Started at 11:49:47
+    Largest first runtime:                 0.475276s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   275
+  Random Sequential colouring:
+    Started at 11:49:49
+    Random sequential runtime:             0.206366s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               248
+  Partial - largest first colouring:
+    Started at 11:49:51
+    Largest first runtime:                 0.268831s
+    Largest first clique:                  [1, 20, 34, 37, 48, 49, 55]
+    Largest first steps:                   1129
+  Partial - random Sequential colouring:
+    Started at 11:49:53
+    Random sequential runtime:             0.131509s
+    Random sequential clique:              [1, 20, 34, 37, 48, 49, 55]
+    Random sequential steps:               1161
+
+p_hat1500_1 - Graph with 60 nodes and 424 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:49:55
+    Built-in runtime:                      0.007118s
+    Built-in clique:                       [2, 6, 29, 37, 39, 51]
+  Non-greedy:
+    Started at 11:49:57
+    Non-greedy runtime:                    0.005866s
+    Non-greedy clique:                     [2, 6, 29, 37, 39, 51]
+    Non-greedy steps:                      490
+  Largest first colouring:
+    Started at 11:49:59
+    Largest first runtime:                 0.077436s
+    Largest first clique:                  [2, 6, 29, 37, 39, 51]
+    Largest first steps:                   136
+  Random Sequential colouring:
+    Started at 11:50:01
+    Random sequential runtime:             0.049166s
+    Random sequential clique:              [2, 6, 29, 37, 39, 51]
+    Random sequential steps:               143
+  Partial - largest first colouring:
+    Started at 11:50:02
+    Largest first runtime:                 0.025964s
+    Largest first clique:                  [2, 6, 29, 37, 39, 51]
+    Largest first steps:                   422
+  Partial - random Sequential colouring:
+    Started at 11:50:04
+    Random sequential runtime:             0.016325s
+    Random sequential clique:              [2, 6, 29, 37, 39, 51]
+    Random sequential steps:               422
+
+p_hat1500_2 - Graph with 60 nodes and 796 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:50:07
+    Built-in runtime:                      0.016637s
+    Built-in clique:                       [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+  Non-greedy:
+    Started at 11:50:09
+    Non-greedy runtime:                    0.013218s
+    Non-greedy clique:                     [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+    Non-greedy steps:                      1167
+  Largest first colouring:
+    Started at 11:50:11
+    Largest first runtime:                 0.217958s
+    Largest first clique:                  [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+    Largest first steps:                   99
+  Random Sequential colouring:
+    Started at 11:50:13
+    Random sequential runtime:             0.165341s
+    Random sequential clique:              [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+    Random sequential steps:               153
+  Partial - largest first colouring:
+    Started at 11:50:15
+    Largest first runtime:                 0.298583s
+    Largest first clique:                  [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+    Largest first steps:                   337
+  Partial - random Sequential colouring:
+    Started at 11:50:17
+    Random sequential runtime:             0.157930s
+    Random sequential clique:              [1, 2, 6, 10, 11, 13, 26, 33, 35, 37, 39]
+    Random sequential steps:               415
+
+p_hat1500_3 - Graph with 60 nodes and 1283 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:50:21
+    Built-in runtime:                      0.119582s
+    Built-in clique:                       [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+  Non-greedy:
+    Started at 11:50:23
+    Non-greedy runtime:                    0.057153s
+    Non-greedy clique:                     [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+    Non-greedy steps:                      13674
+  Largest first colouring:
+    Started at 11:50:26
+    Largest first runtime:                 1.670408s
+    Largest first clique:                  [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+    Largest first steps:                   403
+  Random Sequential colouring:
+    Started at 11:50:30
+    Random sequential runtime:             1.638350s
+    Random sequential clique:              [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+    Random sequential steps:               842
+  Partial - largest first colouring:
+    Started at 11:50:33
+    Largest first runtime:                 2.265979s
+    Largest first clique:                  [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+    Largest first steps:                   1380
+  Partial - random Sequential colouring:
+    Started at 11:50:38
+    Random sequential runtime:             1.765126s
+    Random sequential clique:              [1, 2, 10, 11, 13, 25, 26, 27, 33, 35, 37, 39, 41, 45, 56]
+    Random sequential steps:               2683
+
+p_hat300_1 - Graph with 60 nodes and 408 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:50:42
+    Built-in runtime:                      0.002308s
+    Built-in clique:                       [4, 30, 40, 43, 59]
+  Non-greedy:
+    Started at 11:50:44
+    Non-greedy runtime:                    0.002068s
+    Non-greedy clique:                     [4, 30, 40, 43, 59]
+    Non-greedy steps:                      444
+  Largest first colouring:
+    Started at 11:50:45
+    Largest first runtime:                 0.017312s
+    Largest first clique:                  [4, 30, 40, 43, 59]
+    Largest first steps:                   104
+  Random Sequential colouring:
+    Started at 11:50:47
+    Random sequential runtime:             0.013709s
+    Random sequential clique:              [4, 30, 40, 43, 59]
+    Random sequential steps:               119
+  Partial - largest first colouring:
+    Started at 11:50:48
+    Largest first runtime:                 0.005350s
+    Largest first clique:                  [4, 30, 40, 43, 59]
+    Largest first steps:                   405
+  Partial - random Sequential colouring:
+    Started at 11:50:50
+    Random sequential runtime:             0.004479s
+    Random sequential clique:              [4, 30, 40, 43, 59]
+    Random sequential steps:               412
+
+p_hat300_2 - Graph with 60 nodes and 859 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:50:51
+    Built-in runtime:                      0.009892s
+    Built-in clique:                       [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+  Non-greedy:
+    Started at 11:50:53
+    Non-greedy runtime:                    0.005927s
+    Non-greedy clique:                     [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+    Non-greedy steps:                      1359
+  Largest first colouring:
+    Started at 11:50:54
+    Largest first runtime:                 0.079169s
+    Largest first clique:                  [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+    Largest first steps:                   189
+  Random Sequential colouring:
+    Started at 11:50:56
+    Random sequential runtime:             0.062680s
+    Random sequential clique:              [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+    Random sequential steps:               231
+  Partial - largest first colouring:
+    Started at 11:50:58
+    Largest first runtime:                 0.094787s
+    Largest first clique:                  [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+    Largest first steps:                   528
+  Partial - random Sequential colouring:
+    Started at 11:50:59
+    Random sequential runtime:             0.066799s
+    Random sequential clique:              [4, 19, 20, 21, 33, 38, 40, 43, 48, 49, 56, 59]
+    Random sequential steps:               540
+
+p_hat300_3 - Graph with 60 nodes and 1318 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:51:01
+    Built-in runtime:                      0.116831s
+    Built-in clique:                       [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+  Non-greedy:
+    Started at 11:51:03
+    Non-greedy runtime:                    0.049833s
+    Non-greedy clique:                     [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+    Non-greedy steps:                      14342
+  Largest first colouring:
+    Started at 11:51:04
+    Largest first runtime:                 0.342674s
+    Largest first clique:                  [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+    Largest first steps:                   389
+  Random Sequential colouring:
+    Started at 11:51:06
+    Random sequential runtime:             0.278573s
+    Random sequential clique:              [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+    Random sequential steps:               661
+  Partial - largest first colouring:
+    Started at 11:51:08
+    Largest first runtime:                 0.430410s
+    Largest first clique:                  [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+    Largest first steps:                   1152
+  Partial - random Sequential colouring:
+    Started at 11:51:10
+    Random sequential runtime:             0.422942s
+    Random sequential clique:              [3, 4, 13, 19, 20, 21, 26, 33, 43, 48, 49, 52, 53, 55, 57, 59]
+    Random sequential steps:               2528
+
+p_hat700_1 - Graph with 60 nodes and 423 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:51:12
+    Built-in runtime:                      0.003452s
+    Built-in clique:                       [12, 24, 25, 26, 58]
+  Non-greedy:
+    Started at 11:51:14
+    Non-greedy runtime:                    0.003608s
+    Non-greedy clique:                     [12, 24, 25, 26, 58]
+    Non-greedy steps:                      528
+  Largest first colouring:
+    Started at 11:51:16
+    Largest first runtime:                 0.037058s
+    Largest first clique:                  [12, 24, 25, 26, 58]
+    Largest first steps:                   123
+  Random Sequential colouring:
+    Started at 11:51:17
+    Random sequential runtime:             0.022063s
+    Random sequential clique:              [12, 24, 25, 26, 58]
+    Random sequential steps:               144
+  Partial - largest first colouring:
+    Started at 11:51:19
+    Largest first runtime:                 0.015060s
+    Largest first clique:                  [12, 24, 25, 26, 58]
+    Largest first steps:                   459
+  Partial - random Sequential colouring:
+    Started at 11:51:20
+    Random sequential runtime:             0.009205s
+    Random sequential clique:              [12, 24, 25, 26, 58]
+    Random sequential steps:               459
+
+p_hat700_2 - Graph with 60 nodes and 871 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:51:22
+    Built-in runtime:                      0.017526s
+    Built-in clique:                       [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+  Non-greedy:
+    Started at 11:51:24
+    Non-greedy runtime:                    0.008945s
+    Non-greedy clique:                     [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+    Non-greedy steps:                      1709
+  Largest first colouring:
+    Started at 11:51:26
+    Largest first runtime:                 0.200715s
+    Largest first clique:                  [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+    Largest first steps:                   220
+  Random Sequential colouring:
+    Started at 11:51:28
+    Random sequential runtime:             0.122341s
+    Random sequential clique:              [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+    Random sequential steps:               245
+  Partial - largest first colouring:
+    Started at 11:51:29
+    Largest first runtime:                 0.211839s
+    Largest first clique:                  [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+    Largest first steps:                   475
+  Partial - random Sequential colouring:
+    Started at 11:51:31
+    Random sequential runtime:             0.103755s
+    Random sequential clique:              [4, 9, 12, 14, 15, 30, 31, 32, 39, 50, 54, 57]
+    Random sequential steps:               504
+
+p_hat700_3 - Graph with 60 nodes and 1336 edges:
+----------------------------------------------------
+  Built-in:
+    Started at 11:51:33
+    Built-in runtime:                      0.129803s
+    Built-in clique:                       [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+  Non-greedy:
+    Started at 11:51:35
+    Non-greedy runtime:                    0.069761s
+    Non-greedy clique:                     [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+    Non-greedy steps:                      17396
+  Largest first colouring:
+    Started at 11:51:37
+    Largest first runtime:                 1.161361s
+    Largest first clique:                  [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+    Largest first steps:                   659
+  Random Sequential colouring:
+    Started at 11:51:40
+    Random sequential runtime:             0.895756s
+    Random sequential clique:              [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+    Random sequential steps:               1057
+  Partial - largest first colouring:
+    Started at 11:51:42
+    Largest first runtime:                 1.435351s
+    Largest first clique:                  [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+    Largest first steps:                   2018
+  Partial - random Sequential colouring:
+    Started at 11:51:45
+    Random sequential runtime:             0.994891s
+    Random sequential clique:              [1, 3, 4, 5, 8, 12, 17, 24, 30, 31, 46, 48, 54, 56, 57, 59, 60]
+    Random sequential steps:               3342

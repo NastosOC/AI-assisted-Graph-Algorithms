@@ -1,0 +1,18 @@
+The list of installs used and additional setups.
+
+    networkx    - for creating graphs
+
+    matplotlib  - for visualizing graphs
+
+    scipy       - for visualizing graphs using the Kamada Kawai Layout
+                - not necessary, just nice to have
+
+    venv        - for the virtual environment (workspack safety)
+                - called using venv\Scripts\activate
+
+    unittest    - for creating tests
+                - to show both passing and failing tests: python -m unittest -v file_name.py
+                - to show print statements immediately  : python -u -m unittest file_name.py
+
+    requests    - for loading graph files via HTTP requests
+                - not necessary, just nice to have
