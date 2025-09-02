@@ -144,6 +144,9 @@ def is_p4(G, v):
 
     subgraph = G.subgraph(v)
     degrees = sorted([d for _, d in subgraph.degree()])
+    
+    if len(subgraph.edges) != 3:
+        return False
 
     if (degrees == [1, 1, 2, 2]):
         return True
@@ -151,6 +154,14 @@ def is_p4(G, v):
     return False
 
 def is_c4(G, v):
+    """
+    Check if the nodes in list v form a C4 in graph G.
+    Parameters:
+        G (networkx.Graph): The graph.
+        v (list): List of nodes to check.   
+    Returns:
+        bool: True if v forms a C4, False otherwise.
+    """
     if not isinstance(G, nx.Graph):
         return False
     if not isinstance(v, (list, tuple, set)):
@@ -192,6 +203,9 @@ def is_quasi_threshold(G, certifying=None):
     Returns:
         bool: True if G is quasi-threshold, False otherwise.
     """
+    if not isinstance(G, nx.Graph):
+        return False
+    
     p4_list = find_all_p4_bfs(G)
     c4_list = find_all_c4(G)
     
@@ -211,6 +225,9 @@ def is_quasi_threshold_2(G):
     Returns:
         bool: True if G is quasi-threshold, False otherwise.
     """
+    if not isinstance(G, nx.Graph):
+        return False
+    
     for e in G.edges():
         x, y = e
 

@@ -2,7 +2,7 @@ import networkx as nx
 import unittest
 from functions.check_functions import *
 
-# 30 Tests and 69 Asserts
+# 32 Tests and 90 Asserts
 class TestIsP4(unittest.TestCase):
     """
     Testing is_p4(nx.Graph, node_list) check function on various edge cases.
@@ -84,7 +84,6 @@ class TestIsP4(unittest.TestCase):
         self.assertFalse(is_p4(G, [0, 1, 2, 3]))
         self.assertFalse(is_p4(G, [2, 3, 4, 5]))
         
-
 # 2. Kn Graphs with Edge (1, 2) Missing
     def test_k4_missing_edge(self):
         """networkX 4-node complete graph with edge (1, 2) removed"""
@@ -152,6 +151,33 @@ class TestIsP4(unittest.TestCase):
         G = nx.path_graph(4)
         G.add_edge(0, 2)
         self.assertFalse(is_p4(G, [0, 1, 2, 3]))
+
+    def test_p4_all_node_permutations(self):
+        """networkX 4-node path graph"""
+        G = nx.path_graph(4)
+        self.assertTrue(is_p4(G, [0, 1, 2, 3]))
+        self.assertTrue(is_p4(G, [1, 2, 3, 0]))
+        self.assertTrue(is_p4(G, [2, 3, 0, 1]))
+        self.assertTrue(is_p4(G, [3, 0, 1, 2]))
+
+        self.assertTrue(is_p4(G, [0, 3, 2, 1]))
+        self.assertTrue(is_p4(G, [3, 2, 1, 0]))
+        self.assertTrue(is_p4(G, [2, 1, 0, 3]))
+        self.assertTrue(is_p4(G, [1, 0, 3, 2]))
+
+    def test_p4_with_chord_all_node_permutations(self):
+        """networkX 4-node path graph"""
+        G = nx.path_graph(4)
+        G.add_edge(0, 2)
+        self.assertFalse(is_p4(G, [0, 1, 2, 3]))
+        self.assertFalse(is_p4(G, [1, 2, 3, 0]))
+        self.assertFalse(is_p4(G, [2, 3, 0, 1]))
+        self.assertFalse(is_p4(G, [3, 0, 1, 2]))
+
+        self.assertFalse(is_p4(G, [0, 3, 2, 1]))
+        self.assertFalse(is_p4(G, [3, 2, 1, 0]))
+        self.assertFalse(is_p4(G, [2, 1, 0, 3]))
+        self.assertFalse(is_p4(G, [1, 0, 3, 2]))
 
 # 4. Complex Configurations
     def test_graph_with_multiple_paths(self):
@@ -226,23 +252,32 @@ class TestIsP4(unittest.TestCase):
         self.assertTrue(is_p4(G, ['A', 'B', 'C', 'D']))
 
     def test_nodes_not_in_G(self):
+        """networkX Graph with 5 nodes and 0 edges"""
         G = nx.Graph()
         G.add_nodes_from([0, 1, 2, 3, 4])
         self.assertFalse(is_p4(G, [5, 6, 7, 8]))
 
     def test_too_few_nodes(self):
+        """networkX 4-node path graph"""
         G = nx.path_graph(4)
         self.assertFalse(is_p4(G, [0]))
         self.assertFalse(is_p4(G, [0, 1]))
         self.assertFalse(is_p4(G, [0, 1, 2]))
 
-    def test_invalid_node_types(self):
-        G = nx.path_graph(4)
-        self.assertFalse(is_p4(G, None))
-        self.assertFalse(is_p4("Not a Graph", [0, 1, 2, 3]))
-        self.assertFalse(is_p4(G, [0, 1, 2, "3"]))
+    def test_invalid_input_types(self):
+        """Empty networkX Graph"""
+        G = nx.Graph()
+        self.assertFalse(is_p4(G, None))           
+        self.assertFalse(is_p4(G, "hello")) 
+        self.assertFalse(is_p4(G, 123))            
+        self.assertFalse(is_p4(G, Exception))        
+        self.assertFalse(is_p4(G, {'a': 1}))           
+        self.assertFalse(is_p4(G, [1, 1]))       
+        self.assertFalse(is_p4(G, [1, 'A']))
+        self.assertFalse(is_p4(G, float("inf")))
 
     def test_duplicate_node_input(self):
+        """networkX 4-node path graph"""
         G = nx.path_graph(4)
         self.assertFalse(is_p4(G, [0, 1, 1, 2]))
 

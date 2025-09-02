@@ -6,6 +6,7 @@ import random
 
 def generate_trivially_perfect_graph(n, seed=None):
     """
+    AI generated method, based on wikipedia article: https://en.wikipedia.org/wiki/Trivially_perfect_graph
     Generate a random trivially perfect graph with up to n nodes.
     Nodes are labeled with integers from 0 to n-1.
     

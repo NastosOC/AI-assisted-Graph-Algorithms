@@ -3,10 +3,14 @@ import unittest
 from functions.check_functions import *
 from functions.find_functions import *
 
-# 29 Tests and 101 Asserts
+# 30 Tests and 149 Asserts
 class TestFindAllC4(unittest.TestCase):
-    
-    # Custom Assertion
+    """
+    Testing find_all_c4(nx.Graph) function on various edge cases.
+    Asserts for each case are either:
+        Confirming the function finds all known C4s in a provided graph.
+    """
+# Custom Assertion
     def assertIsC4s(self, G, c4_list):
         for c4 in c4_list:
             self.assertTrue(is_c4(G, list(c4)), f"{c4} is not a valid C4")
@@ -17,7 +21,12 @@ class TestFindAllC4(unittest.TestCase):
             for node in c4:
                 self.assertIn(node, nodes, f"Node {node} not in graph")
 
+    def assertNoDuplicates(self, c4_list):
+        self.assertEqual(len(c4_list), len(set(frozenset(p) for p in c4_list)), "Duplicate C4s found")
+
+# 1. Basic Graph Structures
     def test_empty_graph(self):
+        """Empty networkX Graph"""
         G = nx.Graph()
 
         actual = find_all_c4(G)
@@ -27,11 +36,13 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_too_small_graph(self):
-        G = nx.cycle_graph(3)
+    def test_single_node(self):
+        G = nx.Graph()
+        G.add_node(0)
 
         actual = find_all_c4(G)
         expected_c4_list = []
@@ -40,11 +51,174 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_no_c4(self):
+    def test_k4_graph(self):
+        G = nx.complete_graph(4)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_p4_graph(self):
+        G = nx.path_graph(4)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+    
+    def test_c4_graph(self):
+        G = nx.cycle_graph(4)
+
+        actual = find_all_c4(G)
+        expected_c4_list = [(0, 1, 2, 3)]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_s4_graph(self):
+        G = nx.star_graph(4)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_4_node_bipartite_graph(self):
+        G = nx.complete_bipartite_graph(2, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = [(0, 1, 2, 3)]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+# 2. Kn Graphs with Edge (1, 2) Missing
+    def test_k4_with_missing_edge(self):
+        G = nx.complete_graph(4)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k5_with_missing_edge(self):
+        G = nx.complete_graph(5)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k6_with_missing_edge(self):
+        G = nx.complete_graph(6)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k7_with_missing_edge(self):
+        G = nx.complete_graph(7)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k8_with_missing_edge(self):
+        G = nx.complete_graph(8)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k9_with_missing_edge(self):
+        G = nx.complete_graph(9)
+        G.remove_edge(1, 2)
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_k10_with_missing_edge(self):
         G = nx.complete_graph(10)
+        G.remove_edge(1, 2)
 
         actual = find_all_c4(G)
         expected_c4_list = []
@@ -53,14 +227,44 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_classic_c4(self):
-        # Simple Trivial C4 layout - only 4 nodes
+# 3. Other Well Known Structures
+    def test_house_graph(self):
         G = nx.Graph()
-        G.add_nodes_from([1, 2, 3, 4])
-        G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1)])
+        G.add_edges_from([(0, 1), (0, 2), (1, 2), (2, 3), (3, 4), (4, 0)])
+
+        actual = find_all_c4(G)
+        expected_c4_list = [(0, 2, 3, 4)]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_house_graph_chord_varient_1(self):
+        G = nx.Graph()
+        G.add_edges_from([(0, 1), (0, 3), (1, 2), (2, 3), (3, 4), (4, 0)])
+
+        actual = find_all_c4(G)
+        expected_c4_list = [(0, 1, 2, 3)]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_house_graph_chord_varient_2(self):
+        G = nx.Graph()
+        G.add_edges_from([(0, 1), (1, 2), (1, 4), (2, 3), (3, 4), (4, 0)])
 
         actual = find_all_c4(G)
         expected_c4_list = [(1, 2, 3, 4)]
@@ -69,40 +273,37 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_one_c4(self):
-        # Single C4 among 6 nodes
+    def test_house_graph_chord_varient_3(self):
         G = nx.Graph()
-        G.add_nodes_from([1, 2, 3, 4, 5, 6])
-        G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1), (4, 5), (5, 6)])
+        G.add_edges_from([(0, 1), (1, 2), (1, 3), (2, 3), (3, 4), (4, 0)])
 
         actual = find_all_c4(G)
-        expected_c4_list = [(1, 2, 3, 4)]
+        expected_c4_list = [(0, 1, 3, 4)]
 
         expected = list(frozenset(p) for p in expected_c4_list)
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_multi_c4(self):
-        # Multiple C4's in small graph
+    def test_house_graph_chord_varient_4(self):
         G = nx.Graph()
-        G.add_nodes_from([1, 2, 3, 4, 5, 6, 7, 8, 9])
-        G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1),
-                          (5, 6), (6, 7), (7, 8), (8, 5),
-                          (4, 9), (5, 9)])
+        G.add_edges_from([(0, 1), (1, 2), (2, 3), (2, 4), (3, 4), (4, 0)])
 
         actual = find_all_c4(G)
-        expected_c4_list = [(1, 2, 3, 4), (5, 6, 7, 8)]
+        expected_c4_list = [(0, 1, 2, 4)]
 
         expected = list(frozenset(p) for p in expected_c4_list)
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
@@ -119,25 +320,10 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
-
-    def test_6_cycle(self):
-        # C6 layout
-        G = nx.Graph()
-        G.add_nodes_from([1, 2, 3, 4, 5, 6])
-        G.add_edges_from([(1, 2), (1, 6), (2, 3), (3, 4), (4, 5), (5, 6)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertIsC4s(G, actual)
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
+    
     def test_domino_comp(self):
         # Tests length of domino layout and its complement
         G = nx.Graph()
@@ -153,8 +339,26 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(GC, actual_c)
         self.assertAllValidNodes(G, actual_c)
+        self.assertNoDuplicates(actual_c)
         self.assertEqual(len(expected), len(actual_c))
         self.assertEqual(set(expected), set(actual_c))
+
+    def test_6_cycle(self):
+        # C6 layout
+        G = nx.Graph()
+        G.add_nodes_from([1, 2, 3, 4, 5, 6])
+        G.add_edges_from([(1, 2), (1, 6), (2, 3), (3, 4), (4, 5), (5, 6)])
+
+        actual = find_all_c4(G)
+        expected_c4_list = []
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
 
     def test_6_cycle_comp(self):
         # Tests length of C6 layout and its complement
@@ -171,9 +375,11 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(GC, actual_c)
         self.assertAllValidNodes(G, actual_c)
+        self.assertNoDuplicates(actual_c)
         self.assertEqual(len(expected), len(actual_c))
         self.assertEqual(set(expected), set(actual_c))
 
+# 4. Additional Mid-sized Structures
     def test_grid_graph_c4s(self):
         G = nx.grid_2d_graph(5, 5)  # 5x5 grid has many 4-cycles
 
@@ -184,6 +390,7 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(expected_c4_count, len(actual))
 
     def test_multiple_components(self):
@@ -200,10 +407,11 @@ class TestFindAllC4(unittest.TestCase):
 
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
-    def test_multiple_disconnected_p4(self):
+    def test_multiple_disconnected_c4(self):
         G = nx.Graph()
         G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1),
                           (6, 7), (7, 8), (8, 9), (9, 6),
@@ -214,194 +422,9 @@ class TestFindAllC4(unittest.TestCase):
 
         expected = list(frozenset(p) for p in expected_c4_list)
 
-
         self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-        
-
-    def test_false_positive(self):
-        G = nx.Graph()
-        G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1), (1, 3)]) # Triangle breaking C4
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertIsC4s(G, actual)
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_non_integer_nodes(self):
-        G = nx.Graph()
-        G.add_edges_from([('a', 'b'), ('b', 'c'), ('c', 'd'), ('a', 'd')])
-        
-        actual = find_all_c4(G)
-        expected_c4_list = [('a', 'b', 'c', 'd')]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertIsC4s(G, actual)
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K4_missing_edge(self):
-        G = nx.complete_graph(4)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K5_missing_edge(self):
-        G = nx.complete_graph(5)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-    
-    def test_K6_missing_edge(self):
-        G = nx.complete_graph(6)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K7_missing_edge(self):
-        G = nx.complete_graph(7)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K8_missing_edge(self):
-        G = nx.complete_graph(8)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K9_missing_edge(self):
-        G = nx.complete_graph(9)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_K10_missing_edge(self):
-        G = nx.complete_graph(10)
-        G.remove_edge(0, 1)
-
-        actual = find_all_c4(G)
-        expected_c4_list = []
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_house_graph(self):
-        G = nx.Graph()
-        G.add_edges_from([(0, 1), (0, 2), (1, 2), (2, 3), (3, 4), (4, 0)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = [(0, 2, 3, 4)]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_house_graph_chord_varient_1(self):
-        G = nx.Graph()
-        G.add_edges_from([(0, 1), (0, 3), (1, 2), (2, 3), (3, 4), (4, 0)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = [(0, 1, 2, 3)]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_house_graph_chord_varient_2(self):
-        G = nx.Graph()
-        G.add_edges_from([(0, 1), (1, 2), (1, 4), (2, 3), (3, 4), (4, 0)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = [(1, 2, 3, 4)]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_house_graph_chord_varient_3(self):
-        G = nx.Graph()
-        G.add_edges_from([(0, 1), (1, 2), (1, 3), (2, 3), (3, 4), (4, 0)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = [(0, 1, 3, 4)]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
-        self.assertEqual(len(expected), len(actual))
-        self.assertEqual(set(expected), set(actual))
-
-    def test_house_graph_chord_varient_4(self):
-        G = nx.Graph()
-        G.add_edges_from([(0, 1), (1, 2), (2, 3), (2, 4), (3, 4), (4, 0)])
-
-        actual = find_all_c4(G)
-        expected_c4_list = [(0, 1, 2, 4)]
-
-        expected = list(frozenset(p) for p in expected_c4_list)
-
-        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
@@ -414,7 +437,9 @@ class TestFindAllC4(unittest.TestCase):
 
         expected = list(frozenset(p) for p in expected_c4_list)
 
+        self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 
@@ -427,7 +452,52 @@ class TestFindAllC4(unittest.TestCase):
 
         expected = list(frozenset(p) for p in expected_c4_list)
 
+        self.assertIsC4s(G, actual)
         self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+# 5. Test Input Types
+    def test_string_label_nodes(self):
+        G = nx.Graph()
+        G.add_edges_from([('a', 'b'), ('b', 'c'), ('c', 'd'), ('a', 'd')])
+        
+        actual = find_all_c4(G)
+        expected_c4_list = [('a', 'b', 'c', 'd')]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
+        self.assertEqual(len(expected), len(actual))
+        self.assertEqual(set(expected), set(actual))
+
+    def test_object_node_labels(self):
+        """networkX Graph with objects as node labels"""
+        class CustomNode:
+            def __init__(self, name):
+                self.name = name
+            def __repr__(self):
+                return f"Node({self.name})"
+            def __hash__(self):
+                return hash(self.name)
+            def __eq__(self, other):
+                return isinstance(other, CustomNode) and self.name == other.name
+        a, b, c, d = CustomNode('a'), CustomNode('b'), CustomNode('c'), CustomNode('d')
+
+        G = nx.Graph()
+        G.add_edges_from([(a, b), (b, c), (c, d), (d, a)])
+        
+        actual = find_all_c4(G)
+        expected_c4_list = [(a, b, c, d)]
+
+        expected = list(frozenset(p) for p in expected_c4_list)
+
+        self.assertIsC4s(G, actual)
+        self.assertAllValidNodes(G, actual)
+        self.assertNoDuplicates(actual)
         self.assertEqual(len(expected), len(actual))
         self.assertEqual(set(expected), set(actual))
 

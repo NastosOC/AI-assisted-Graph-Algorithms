@@ -101,10 +101,7 @@ def Bron_Kerbosch(G):
     Finds and prints all maximal cliques in an undirected graph using 
     the iterative Bron–Kerbosch algorithm.
     Parameters:
-        candidates (set): A set of all vertices in the graph.
-        neighbor_function (Callable): A function that takes a vertex and
-        returns a set of its neighboring vertices. Used to determine clique
-        connectivity.
+        G (networkx.Graph): the graph
     Returns:
         maximum (set): A set of all nodes in the maximum clique found.
     """
@@ -142,6 +139,16 @@ def Bron_Kerbosch(G):
     return set(maximum)
 
 def max_clique(G, nodes=None):
+    """
+    AI Generated method.
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a bounding function.
+    Parameters:
+        G (networkx.Graph): The graph.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+    """
     if len(G) == 0:
         return set()
 
@@ -207,6 +214,18 @@ def max_clique(G, nodes=None):
     return set(max_clique)
 
 def max_clique_with_steps(G, nodes=None):
+    """
+    AI Generated method.
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a bounding function.
+    Additionally keeps track of the steps taken by the algorithm.
+    Parameters:
+        G (networkx.Graph): The graph.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+        step_count (int): The number of steps taken by the algorithm.
+    """
     if len(G) == 0:
         return set(), 0
 
@@ -275,6 +294,17 @@ def max_clique_with_steps(G, nodes=None):
     return set(max_clique), step_count
 
 def custom_with_greedy(G, str_mode, nodes=None):
+    """
+    Based off the AI Generated method max_clique().
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a greedy colouring function provided by networkX.
+    Parameters:
+        G (networkx.Graph): The graph.
+        str_mode (string): The colouring strategy used by the greedy colouring function.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+    """
     if len(G) == 0:
         return set()
 
@@ -340,6 +370,18 @@ def custom_with_greedy(G, str_mode, nodes=None):
     return set(max_clique)
 
 def custom_with_partial_greedy(G, str_mode, nodes=None):
+    """
+    Based off the AI Generated method max_clique().
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a greedy colouring function provided by networkX.
+    Greedy colouring function only runs every 3 iterations.
+    Parameters:
+        G (networkx.Graph): The graph.
+        str_mode (string): The colouring strategy used by the greedy colouring function.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+    """
     if len(G) == 0:
         return set()
 
@@ -416,6 +458,19 @@ def custom_with_partial_greedy(G, str_mode, nodes=None):
     return set(max_clique)
 
 def custom_with_greedy_steps(G, str_mode, nodes=None):
+    """
+    Based off the AI Generated method max_clique().
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a greedy colouring function provided by networkX.
+    Additionally keeps track of the steps taken by the algorithm.
+    Parameters:
+        G (networkx.Graph): The graph.
+        str_mode (string): The colouring strategy used by the greedy colouring function.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+        step_count (int): The number of steps taken by the algorithm.
+    """
     if len(G) == 0:
         return set(), 0
 
@@ -483,6 +538,20 @@ def custom_with_greedy_steps(G, str_mode, nodes=None):
     return set(max_clique), steps
 
 def custom_with_partial_greedy_steps(G, str_mode, nodes=None):
+    """
+    Based off the AI Generated method max_clique().
+    Finds the maximum clique in an undirected graph using a bron-kerbosch 
+    algorithm with pruning based on a greedy colouring function provided by networkX.
+    Greedy colouring function only runs every 3 iterations.
+    Additionally keeps track of the steps taken by the algorithm.
+    Parameters:
+        G (networkx.Graph): The graph.
+        str_mode (string): The colouring strategy used by the greedy colouring function.
+        nodes (list): optional
+    Returns:
+        set(max_clique): A set of nodes representing the largest clique found in the G.
+        step_count (int): The number of steps taken by the algorithm.
+    """
     if len(G) == 0:
         return set(), 0
 
@@ -560,6 +629,11 @@ def custom_with_partial_greedy_steps(G, str_mode, nodes=None):
 
     return set(max_clique), steps
 
+
+"""
+divanc() and edge_niche_centrality() require further investigation and possible rewriting.
+Due to being more theoritical ideas - docstrings haven't been fully filled out.
+"""
 def divanc(G):
     G = G.copy()
     while any(nx.diameter(G.subgraph(c)) > 2 for c in nx.connected_components(G)):
