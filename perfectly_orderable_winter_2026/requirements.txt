@@ -1,0 +1,12 @@
+SoftWare Requirements
+    Operating System
+        - Windows 10/11
+        - Windows Subsystem for Linux (WSL 2) with Ubuntu
+    
+    Development Tools
+        - VS Code (for editing scripts and notebooks)
+
+    Mathematics SoftWare
+        - SageMath installed via conda (conda-forge)
+            - Environment name: sage
+            - Python version: 3.12 (managed by conda)
