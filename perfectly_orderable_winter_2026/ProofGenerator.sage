@@ -90,8 +90,15 @@ def prove_non_PO(G):
         print(f"{i}. {l}")
 
 
+# G = Graph("I?`@d`pJW") // for example
 # for each g6 string in the list, do the following
-G = Graph("I?`@d`pJW")
-G = Cycle_Graph(6).complement()
-G.show()
-prove_non_PO(G)
+with open("non_perfectly_orderable_g6.txt") as f:
+    for idx, line in enumerate(f, 1):
+        g6 = line.strip()
+        if not g6:
+            continue
+        G = Graph(g6)
+        print(f"=== Graph {idx}: {g6} ===")
+        # show(G)
+        prove_non_PO(G)
+        print()
